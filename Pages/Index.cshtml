@@ -5,6 +5,45 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Hello There!</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nvlTJrNJ5lA" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<style>
+    body {
+        background-color: darkslateblue;
+    }
+
+    h1 {
+        color: orangered;
+    }
+
+    p {
+        color: greenyellow;
+    }
+</style>
+
+<script>
+    function revealMessage() {
+        document.getElementById("hiddenMessage").style.display = 'block';
+    }
+
+    function countDown() {
+        var currentVal = document.getElementById("countDownButton").innerHTML;
+        var newVal = 0;
+        if (currentVal > 0) {
+            newVal = currentVal - 1;
+        }
+
+        document.getElementById("countDownButton").innerHTML = newVal;
+    }
+</script>
+
+<button onclick="revealMessage()">Click me!</button>
+<div id="hiddenMessage" style="display:none">
+    <p>Won't back down!</p>
+
 </div>
